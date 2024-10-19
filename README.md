@@ -6,15 +6,13 @@ This is a terraform fundamental lab aim to share terraform knowledge to Asia Pac
 
 In this lab, you will create
 
-- VPC with 3 Availability Zones (AZs) in Singapore region.
+- VPC with 1 Availability Zones (AZs) in us-east-1 region.
 
-- Public EC2 instance t3.micro. The instance must use latest Amazon AMI 2023 OS.
+- Private EC2 instance t2.micro. The instance must use latest Amazon AMI 2023 OS.
 
 - S3 bucket can be access by EC2.
 
-- Public EC2 instance can access Internet and system administrator can access the EC2 with specific public IPv4 address
-
-- Apache Website configured inside the public EC2 instance during Terraform provisioning.
+- System administrator can access the EC2 via ec2 endpoint
 
 ## AWS Architecture
 
@@ -22,7 +20,7 @@ In this lab, you will create
 
 ## AWS Infrastructure
 
-**AWS:** VPC, EC2, S3, VPC endpoint
+**AWS:** VPC, EC2, S3, VPC endpoint, EC2 endpoint
 
 **Cost:** Within free tier
 
@@ -34,7 +32,7 @@ In this lab, you will create
 
 - Verify connectivity to the EC2 instance.
 
-- User able to go to Apache Website.
+- Able to connect s3 in ec2 using s3 endpoint.
 
 ## Installation
 
