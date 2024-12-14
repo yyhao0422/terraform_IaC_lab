@@ -48,7 +48,7 @@ jobs:
         
 
       - name: Upload Terraform Plan
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v4
         with:
           name: terraform-plan
           path: terraform_plan_file.txt
