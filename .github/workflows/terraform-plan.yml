@@ -15,15 +15,6 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      # Install NVM and Node.js
-      - name: Install NVM and Node.js
-        run: |
-          curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.2/install.sh | bash
-          echo "source ~/.nvm/nvm.sh" >> $GITHUB_ENV
-          source ~/.nvm/nvm.sh
-          nvm install 16
-          nvm use 16
-
       - name: Set up Terraform
         uses: hashicorp/setup-terraform@v1
         with:
